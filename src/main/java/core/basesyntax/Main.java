@@ -1,5 +1,4 @@
 package core.basesyntax;
-
 public class Main {
     private static final int COUNT_FIGUR = 5;
     public static void main(String[] args) {

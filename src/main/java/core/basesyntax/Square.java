@@ -1,9 +1,8 @@
 package core.basesyntax;
-
 public class Square extends AbstractFigure {
     private int side;
 
-    public Square(int side, Color color) {
+    public Square(int side, String color) {
         super(color);
         this.side = side;
     }
@@ -18,7 +17,7 @@ public class Square extends AbstractFigure {
         System.out.println(
                 "Figure: square, area: " + area() +
                         " sq. units, side: " + side +
-                        " units, color: " + getColor().name().toLowerCase()
+                        " units, color: " + getColor()
         );;
     }
 }

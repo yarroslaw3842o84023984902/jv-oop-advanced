@@ -1,10 +1,9 @@
 package core.basesyntax;
-
 public class Rectangle extends AbstractFigure {
     private int sideA;
     private int sideB;
 
-    public Rectangle(Color color, int sideA, int sideB) {
+    public Rectangle(String color, int sideA, int sideB) {
         super(color);
         this.sideA = sideA;
         this.sideB = sideB;
@@ -21,7 +20,7 @@ public class Rectangle extends AbstractFigure {
                 "Figure: rectangle, area: " + area() +
                         " sq. units, sideA: " + sideA +
                         " units, sideB: " + sideB +
-                        " units, color: " + getColor().name().toLowerCase()
+                        " units, color: " + getColor()
         );
     }
 }
