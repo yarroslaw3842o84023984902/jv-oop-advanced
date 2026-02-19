@@ -1,5 +1,6 @@
 package core.basesyntax;
-public class IsoscelesTrapezoid extends AbstractFigure {
+public class IsoscelesTrapezoid extends AbstractFigure implements Figure, Drawable {
+    private static final double DIVIDER = 2.0;
     private double up;
     private double low;
     private double height;
@@ -11,7 +12,7 @@ public class IsoscelesTrapezoid extends AbstractFigure {
     }
     @Override
     public double area() {
-        return (up + low) / 2 * height;
+        return (up + low) / DIVIDER * height;
     }
     @Override
     public void draw() {

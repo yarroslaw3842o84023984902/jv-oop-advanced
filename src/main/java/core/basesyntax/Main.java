@@ -1,6 +1,6 @@
 package core.basesyntax;
 public class Main {
-    private static final int COUNT_FIGUR = 5;
+    private static final int COUNT_FIGUR = 6;
     public static void main(String[] args) {
         Figure[] figures = new Figure[COUNT_FIGUR];
         FigureSupplier figureSupplier = new FigureSupplier();
